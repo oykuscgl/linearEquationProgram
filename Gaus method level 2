@@ -17,7 +17,7 @@ float **a, *b, *x;
 int N;
 char filename[256];
 FILE* InFile=NULL;
-void count_num_lines(){
+void how_many_lines(){
    //count number of lines in input file - number of equations
    int nelf=0;       //non empty line flag
    do{
@@ -139,7 +139,7 @@ int main(){
        scanf("%s", filename);
        InFile = fopen(filename, "rt");
    }while(InFile==NULL);
-   count_num_lines();
+   how_many_lines();
    allocmatrix();
    rewind(InFile);
    //read data from file
