@@ -1,5 +1,17 @@
 # project3
 
+Level 1
+
+First we determined how our equations would look like based on the project that was assigned. We wrote two functions: one with the result equal to 0 and one with the result equal to a number except 0.
+Our functions worked with return function easily. After identifying the functions, we created an input data for user. First user would decide wether he or she wants to solve equations with two or three unknons.
+With using switch(Selection) function, according to the user's choice we created two cases: two onknowns and three unknowns.
+First case is ax + b = 0 and second one is ax + b = c. 
+After choosing the equation, the user will be asked to write the values in the eqaution. 
+If the value for "a" in case 1 (ax + b = 0) is 0 our program will say: "There is no solution for this equation. Please try another!" 
+Also if the user chooses the second case: ax + b = c and enters 0 for c, our program will warn the user and says: "Please select the right equation type!!" Because it will be same with the case 1 if she enters 0 for c. 
+The user will have countless tries to enter the values she want to enter. 
+Both of the cases will end with break to prevent the loop. 
+
 
 Level 2
 
