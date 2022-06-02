@@ -13,6 +13,7 @@
 
 #include <stdio.h>
 #include <process.h>
+
 float **a, *b, *x;
 int N;
 char filename[256];
@@ -63,7 +64,7 @@ void allocmatrix(){
    }
 }
 
-void readmatrix(){
+void findmatrix(){
    int i=0,j=0;
    //read matrixes a and b from input file
    for(i=0; i<N; i++){
@@ -143,7 +144,7 @@ int main(){
    allocmatrix();
    rewind(InFile);
    //read data from file
-   readmatrix();
+   findmatrix();
    //check if there are 0 on main diagonal and exchange rows in that case
    diagonal();
    fclose(InFile);
@@ -152,7 +153,7 @@ int main(){
    for(k=0; k<N; k++){
        for(i=k+1; i<N; i++){
 	   if(a[k][k]==0){
-	       printf("\nSolution is not exist.\n");
+	       printf("\nSolution does not exist.\n");
 	       return 0;
 	   }
 	   float M = a[i][k] / a[k][k];
@@ -172,7 +173,7 @@ int main(){
    }
 
    InFile = fopen(filename, "rt");
-   readmatrix();
+   findmatrix();
    fclose(InFile);
    printmatrix();
    testsolve();
