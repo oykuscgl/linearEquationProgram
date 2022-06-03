@@ -2,7 +2,7 @@
 //where a[N][N] is square matrix,
 //b[N] and x[N] are columns
 
-//data are stored in input text file:
+//data should be stored in an input text file:
 
 //input file format:
 //a_11 a_12 a_13... a_1N b_1
