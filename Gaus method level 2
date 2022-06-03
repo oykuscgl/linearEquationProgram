@@ -1,5 +1,4 @@
-//HOWTO solve system of linear equations
-//ax=b
+//How to solve system of linear equations
 //where a[N][N] is square matrix,
 //b[N] and x[N] are columns
 
