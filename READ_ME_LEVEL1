@@ -8,7 +8,7 @@ After choosing the equation, the user will be asked to write the values in the e
 If the value for "a" in case 1 (ax + b = 0) is 0 our program will say: "There is no solution for this equation. Please try another!" 
 Also if the user chooses the second case: ax + b = c and enters 0 for c, our program will warn the user and says: "Please select the right equation type!!" Because it will be same with the case 1 if she enters 0 for c. 
 The user will have countless tries to enter the values she want to enter. 
-Both of the cases will end with break to prevent the loop. 
+Both of the cases will end with break to prevent the loop.
 
 
 
